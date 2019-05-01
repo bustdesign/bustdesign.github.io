@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>BUSTdesign - Grafické služby</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description" content="Som mladý chalan, ktorý sa venuje propagačnej grafike.">
+		
+    
+    <link rel="stylesheet" type="text/css" href="src/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    
+    <!--<link rel="stylesheet" type="text/css" href="src/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="src/jquery-3.4.0.min.js"></script>
+</head>
+<script type="text/javascript">
+function jsDynContentOnResize(){
+    var yourImg = document.getElementById('jsNadpisTitulka');
+    if($(window).width() < 500) {
+        yourImg.src = "img/nadpisy/1m.svg";
+    }
+    else if($(window).width() > 500) {
+        yourImg.src = "img/nadpisy/1.svg";
+    }
+}
+</script>
+<body onresize="jsDynContentOnResize()" onload="jsDynContentOnResize()">
+   <div id="section" class="bg"><!-- titulka -->
+        <div class="logo-wrapper">
+        <img class="logo" src="img/logo.svg">
+        </div>
+        <img id="jsNadpisTitulka" class="nadpis-titulka" src="img/nadpisy/1.svg">
+        <img class="scroll" src="img/scroll.svg">
+   </div>
+   <div id="section" class="h2"><!-- corobim -->
+       <div class="col">
+            <div>
+                <a href="#" data-lity><img src="img/2-1.png">Plagáty</a>
+                <a href="#" data-lity><img src="img/2-2.png">Logá</a>
+                <a href="#" data-lity><img src="img/2-3.png">Vizualizácie</a>
+                <a href="#" data-lity><img src="img/2-4.png">Strihy videa/Titulky</a>
+           </div>
+            <div>
+                <a href="#" data-lity><img src="img/2-5.png">Vizitky</a>
+                <a href="#" data-lity><img src="img/2-6.png">Magazíny</a>
+                <a href="#" data-lity><img src="img/2-7.png">Maľby/kresby</a>
+                <a href="#" data-lity><img src="img/2-8.png">Obaly</a>
+            </div>
+       </div>
+   </div>
+   <div id="section" class="bg h3"><!-- omne -->
+       <div class="row">
+            <div class="right">
+                <img class="profilovka" src="img/3-1.jpg">
+            </div>
+            <div class="left">
+                <span>Som mladý chalan, ktorý sa venuje propagačnej grafike. Vyštudoval som SUŠ v TN a ponúkam grafické práce širokého spektra s kvapkou svojho štýlu...</span>
+            </div>
+       </div>
+   </div>
+   <div id="section" class="h4"><!-- kontakt -->
+        <div class="row">
+            <div class="right">
+                <img class="kontaktframe" src="img/4-1.jpg">
+            </div>
+            <div class="left col">
+                <span><i class="fa fa-envelope"></i> bustgraphic@gmail.com<br><i class="fa fa-instagram"></i> @bustdesign<br></span>
+                <span><img class="podpis" src="img/nadpisy/4-1.svg"><br><i class="fa fa-location-arrow"></i> Trenčín</span>
+            </div>
+        </div>
+   </div>
+   <footer>cleanup &amp; code by <a href="http://azurry.com">azurry</a> <img src="img/azurry.svg"> 2019</footer>
+</body>
+</html>
