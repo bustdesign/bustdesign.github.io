@@ -205,6 +205,16 @@ span {
   max-width: 500px;
   border: 1px solid #d6d6d6;
   background: white; }
+  span a {
+    text-decoration: none;
+    color: black; }
+
+iframe {
+  /* ios iframe bug fix */
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  min-height: 100%; }
 
 footer {
   display: -webkit-box;
